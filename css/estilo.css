@@ -1,0 +1,27 @@
+body{
+    background-color:#383B42;
+    font-size:medium;
+
+}
+h1{
+    color:#FFE3E3;
+    border: 1px solid
+}
+p{
+    color:#FFE3E3;
+}
+a{
+    color:beige;
+    text-decoration:none;
+    
+}
+a:hover{
+    color:coral;
+    text-decoration:underline;
+}
+a:visited{
+    color:deeppink;
+}
+label{
+    color:#FFE3E3;
+}
