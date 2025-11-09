@@ -64,11 +64,87 @@
     </header>
 
     <main>
-        
+        <!-- Dropdown de gêneros -->
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Gênero
+            </button>
+            <ul class="dropdown-menu">
+                <li><a onclick="mostrarFilmes('acao')" class="dropdown-item" href="#">Ação</a></li>
+                <li><a onclick="mostrarFilmes('romance')" class="dropdown-item" href="#">Romance</a></li>
+                <li><a onclick="mostrarFilmes('terror')" class="dropdown-item" href="#">Terror</a></li>
+            </ul>
+        </div>
+
+        <!-- Aqui os filmes vão aparecer -->
+        <section id="local-filmes" class="mt-4"></section>
     </main>
+
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+
+<script>
+    // ====== BASE DE DADOS ======
+    const filmes = {
+        terror: [
+            { titulo: "Anabelle", capa: "https://br.web.img2.acsta.net/pictures/14/08/11/21/32/336680.jpg" },
+            { titulo: "Invocação do Mal", capa: "https://br.web.img2.acsta.net/pictures/210/166/21016629_2013062820083878.jpg" }
+        ],
+
+        acao: [
+            { titulo: "Carga Explosiva", capa: "https://imgs.pontofrio.com.br/1566907385/1xg.jpg?imwidth=500" },
+            { titulo: "John Wick", capa: "https://br.web.img3.acsta.net/pictures/17/01/10/15/05/404753.jpg" }
+        ],
+
+        romance: [
+            { titulo: "A Culpa é das Estrelas", capa: "https://m.media-amazon.com/images/I/91RXDK2vhzL._AC_UF1000,1000_QL80_.jpg" },
+            { titulo: "Como Eu Era Antes de Você", capa: "https://m.media-amazon.com/images/I/61yY8EBimFL._AC_UF1000,1000_QL80_.jpg" }
+        ]
+    };
+
+    const localFilmes = document.getElementById("local-filmes");
+
+    // ====== FUNÇÃO PARA MOSTRAR FILMES ======
+    function mostrarFilmes(genero) {
+
+        // 1️⃣ limpa o conteúdo anterior
+        localFilmes.innerHTML = "";
+
+        // 2️⃣ pega o array do gênero selecionado
+        const lista = filmes[genero];
+
+        // 3️⃣ percorre cada filme do array
+        for (let i = 0; i < lista.length; i++) {
+            const filme = lista[i]; // pega o filme atual // 4️⃣ cria uma <div> para cada
+            filme
+            const divFilme = document.createElement("div");
+            divFilme.style.display = "inline-block";
+            divFilme.style.textAlign = "center";
+            divFilme.style.margin = "10px";
+
+            // 5️⃣ cria o elemento da imagem
+            const img = document.createElement("img");
+            img.src = filme.capa;
+            img.alt = filme.titulo;
+            img.style.width = "150px";
+            img.style.borderRadius = "10px";
+
+            // 6️⃣ cria o nome do filme
+            const nome = document.createElement("p");
+            nome.textContent = filme.titulo;
+
+            // 7️⃣ junta tudo: imagem + nome dentro da div
+            divFilme.appendChild(img);
+            divFilme.appendChild(nome);
+
+            // 8️⃣ adiciona a div dentro da section principal
+            localFilmes.appendChild(divFilme);
+        }
+    }
+</script>
+
 </html>
