@@ -1,0 +1,74 @@
+/* configurações gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* fim das configurações gerais */
+
+/* cor do fundo body */
+
+.background-body {
+    background-color: bisque;
+}
+
+/* fim das configurações background */
+
+/* designs gerais header */
+
+.cointainer-header {
+    background-color: #93e381;
+    width: 100%;
+}
+
+/* fim de design gerais header */
+
+/* titulo h1 header */
+
+.cointainer-titulo-e-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo-img {
+    width: 40px;
+    display: inline-block;
+}
+
+#titulo {
+    color: #d4a017; /* cor do texto */
+    -webkit-text-stroke: 1px rgb(143, 136, 57); /* borda do texto */
+}
+
+/* fim do titulo h1 do header */ 
+
+.nav-cointainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-buttons {
+    color: rgb(189, 118, 46);   
+    text-decoration: none;
+    -webkit-text-stroke: rgb(54, 71, 48) 0.2px;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-buttons:hover {
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    transition: 0.2s;
+}
+
+#animais-img {
+    width: 100%;
+    height: 60vh;
+    display: block;
+    margin: auto;
+}
