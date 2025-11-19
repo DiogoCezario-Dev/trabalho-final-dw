@@ -60,8 +60,9 @@
     justify-content: center;
     /* display flex centralizando a div */
 
-    gap: 20px; /* espaço de 20px entre elementos */
+    gap: 15px; /* espaço de 20px entre elementos */
 }
+/* buttons da nav */
 
 .nav-buttons {
     color: rgb(189, 118, 46); /* cor do texto */ 
@@ -72,11 +73,18 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* fonte do texto */
 }
 
+/* buttons nav quando passa o mouse */
+
 .nav-buttons:hover {
     border-bottom: 3px solid black;
     border-right: 3px solid black;
     transition: 0.2s;
 }
+
+/* fim buttons da nav quando passa o mouse */
+
+
+/* fim configurações dos buttons da nav */
 
 #animais-img {
     width: 100%;
@@ -153,25 +161,4 @@
 
 .preco {
     font-size: 1.3em;
-}
-
-@media screen and (max-width: 650) and (min-width: 350) {
-    .cointainer-header {
-        padding: 30px;
-    }
-
-    .nav-cointainer {
-        gap: 2px;
-        display: flex;
-        text-align: center;
-    }
-    
-    .nav-buttons {
-        font-size: 0.7em;
-    }
-
-    .produto-box {
-        display: block;
-        margin: auto;
-    }
 }
