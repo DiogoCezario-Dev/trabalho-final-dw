@@ -162,3 +162,19 @@
 .preco {
     font-size: 1.3em;
 }
+
+.footer-div {
+    background-color: #A3B18A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-social-media:hover {
+    background-color: white;
+    scale: 1.1;
+    border-radius: 20px;
+    transition: 0.3s;
+}
