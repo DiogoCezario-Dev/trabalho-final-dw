@@ -24,7 +24,7 @@
 
 /* fim de design gerais header */
 
-/* titulo h1 header */
+/* começo header geral */
 
 .cointainer-titulo-e-logo {
     display: flex;
@@ -34,10 +34,16 @@
     /* display flex para alinhar itens no centro */
 }
 
+/* começo logo img*/
+
 #logo-img {
     width: 40px; /* tamanho imagem */
     display: inline-block; /*display inline (ocupando so o seu taamnho) com configurações em block (ocupando a linha toda) */
 }
+
+/* final logo img */
+
+/* começo título header h1 */
 
 #titulo {
     color: #d4a017; /* cor do texto */
@@ -45,6 +51,8 @@
 }
 
 /* fim do titulo h1 do header */ 
+
+/* fim header geral */
 
 .nav-cointainer {
     display: flex;
@@ -56,12 +64,12 @@
 }
 
 .nav-buttons {
-    color: rgb(189, 118, 46);   
-    text-decoration: none;
-    -webkit-text-stroke: rgb(54, 71, 48) 0.2px;
-    font-size: 1.7em;
-    text-transform: uppercase;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(189, 118, 46); /* cor do texto */ 
+    text-decoration: none; /* tira a decoração do texto */
+    -webkit-text-stroke: rgb(54, 71, 48) 0.2px; /* cor de borda no texto (webtik = extensão chrome) */
+    font-size: 1.7em; /* tamanho da fonte */
+    text-transform: uppercase; /* transforma o texto em letras maiúculas */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* fonte do texto */
 }
 
 .nav-buttons:hover {
