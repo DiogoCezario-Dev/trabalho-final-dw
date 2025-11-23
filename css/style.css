@@ -217,6 +217,11 @@
     margin-top: 20px;
 }
 
+#footer {
+    margin-top: 164px;
+    padding-bottom: 4px;
+}
+
 .footer-social-media:hover {
     background-color: white;
     scale: 1.1;
@@ -315,6 +320,13 @@
 
 /* adoção página */ 
 
+#titulo-adocao {
+    text-align: center;
+    margin-top: 10px;
+    color: brown;
+    background-color: white;
+}
+
 #background-adoção {
     background-image: url(../imagem/imagem-de-fundo.jpg);
 }
@@ -323,12 +335,14 @@
     display: flex;
     margin-top: 10px;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .block-adoção {
     background-color: rgba(255, 255, 255, 0.752);
     width: 350px;
     border-radius: 10px 15px;
+    margin-top: 10px;
 }
 
 .h2-nome {
@@ -351,6 +365,30 @@
 .block-adoção>div>p {
     font-size: 1.1em;
     margin-left: 10px;
+}
+
+.div-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.button-adotar {
+    color: aliceblue;
+    background-color: rgb(0, 128, 81);
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    border-radius: 10px;
+}
+
+.button-adotar:hover {
+    scale: 1.1;
+    border-radius: 30px;
+    color: white;
+    transition: 0.3s;
 }
 
 /* fim adoção página */ 
