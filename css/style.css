@@ -310,3 +310,41 @@
     scale: 1.1;
     transition: 0.3s;
 }
+
+/* adoção página */ 
+
+#background-adoção {
+    background-image: url(../imagem/imagem-de-fundo.jpg);
+}
+
+.cointainer-adocao {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.674);
+    align-items: center;
+    width: 300px;
+}
+
+.bold-font {
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.img-adoção {
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+    box-shadow: black 2px 2px 5px;
+}
+
+.h2-nome {
+    text-align: center;
+    color: #6a4e08;
+    font-size: 1.8em;
+}
+
+.cointainer-adocao>div>p {
+    font-size: 1.3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
