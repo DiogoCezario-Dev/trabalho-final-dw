@@ -311,6 +311,8 @@
     transition: 0.3s;
 }
 
+/* fim da página serviços */
+
 /* adoção página */ 
 
 #background-adoção {
@@ -318,33 +320,37 @@
 }
 
 .cointainer-adocao {
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.674);
-    align-items: center;
-    width: 300px;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
 }
 
-.bold-font {
-    text-transform: uppercase;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.1em;
-    margin-bottom: 10px;
-}
-
-.img-adoção {
-    margin: auto;
-    display: block;
-    border-radius: 20px;
-    box-shadow: black 2px 2px 5px;
+.block-adoção {
+    background-color: rgba(255, 255, 255, 0.752);
+    width: 350px;
+    border-radius: 10px 15px;
 }
 
 .h2-nome {
+    color: #866719;
     text-align: center;
-    color: #6a4e08;
-    font-size: 1.8em;
+    margin-top: 10px;
 }
 
-.cointainer-adocao>div>p {
-    font-size: 1.3em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.bold-font {
+    font-size: 1.2em;
 }
+
+.block-adoção>div>img {
+    display: block;
+    margin: auto;   
+    border-radius: 20px;
+    box-shadow: black 2px 3px 5px;
+}
+
+.block-adoção>div>p {
+    font-size: 1.1em;
+    margin-left: 10px;
+}
+
+/* fim adoção página */ 
