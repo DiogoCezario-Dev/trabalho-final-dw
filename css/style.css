@@ -392,3 +392,74 @@
 }
 
 /* fim adoção página */ 
+
+/* página casdastro */
+
+#background-cadastro {
+    background-image: url(../imagem/imagem-de-fundo.jpg);
+}
+
+#Cadastro-página {
+    display: block;
+    margin: auto;
+    box-shadow: 2px 3px 5px;
+    width: 750px;
+    height: 500px;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.83);
+}
+
+#Cadastro-página>div>h1 {
+    text-align: center;
+    color: #af810d;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+.label-form {
+    text-align: center;
+    display: block;
+    color: brown;
+    font-size: 1.6em;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+ .form-inputs {
+    display: block;
+    margin: auto;
+    height: 30px;
+    width: 50%;
+    padding: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 10px;
+    border-radius: 2px 6px;
+    box-shadow: 2px 2px 1px;
+ }
+
+ #nome-label {
+    text-transform: capitalize;
+ }
+
+ #button-cadas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 19px;
+}
+
+#cadastro-button {
+    padding: 10px;
+    background-color: rgb(0, 128, 81);
+    color: white;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#cadastro-button:hover {
+    scale: 1.1;
+    text-decoration: underline;
+    transition: 0.2s;
+}
